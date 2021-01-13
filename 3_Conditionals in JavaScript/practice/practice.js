@@ -3,7 +3,7 @@ console.log("Conditionals in JavaScript");
 
 //Practice
 //Figure out the syntax errors in following, and fix them.
-
+//كتشف الأخطاء النحوية التالية وأصلحها
 // 1
 if (10 <= 10){
 }
@@ -11,13 +11,15 @@ if (10 <= 10){
 //if (5 > 3) {
 // return ("Five bigger than three");
 //}
-//else
 //return false;
 
 // 3
 if (true){
+  
 }
-else(false)
+else if(false){
+
+}
 
 
 // 4
@@ -29,7 +31,7 @@ if ("hello" === "hello"){
 }
 
 //Predict the value of the expression and explain why
-
+//توقع قيمة التعبير واشرح السبب
 true && true && false;
 // => false
 true || (true && false);
@@ -44,6 +46,7 @@ true || (true && false);
 // => false
 
 //Check out the following examples and solve the question.
+//تحقق من الأمثلة التالية وحل السؤال.
 
 // you could use the `toLowerCase` or `toUpperCase `string methods to check if a string matches without it being case sensitive
 "HeLlO wOrlD".toLowerCase() === "hello world"; // => true
@@ -52,6 +55,8 @@ true || (true && false);
 //  if you are expecting the input to be in a certain length for example
 "myPassword".length <= 15; // => true
 "Hello World".length === 11; // => true, notice how even the empty space " " was counted as a character
+
+
 // Write a function `login` that accepts two string arguments `username` and `password` and
 // returns a string "login successful" if both are valid or return "Invalid login information" with the appropriate reason,
 // the function will check the following:
@@ -63,7 +68,8 @@ true || (true && false);
 // (username => "MrPotato", password =>"LonelyPotato"),  (username => "theWiseMan", password => "12345678")
 
 
-const login = function (username, password) {
+const login1 = function (username, password) {
+
   if (!(username.length > 4)) {
     return 'Invalid login information, the username length must be greater than 4';
   } else if (!(password.length >= 8)) {
@@ -115,8 +121,9 @@ isLeapYear(1699);
 
 
 //Write a function deposit that accepts an argument amount and returns the deposited amount, the function should only accept positive number arguments otherwise return "Please enter a valid number"
-
+//اكتب وديعة دالة تقبل مقدار الوسيطة وتُرجع المبلغ المودع، ويجب أن تقبل الدالة وسيطات الأرقام الموجبة فقط وإلا فسيتم إرجاع "يرجى إدخال رقم صالح"
 const deposit = function (amount) {
+
   if (typeof amount === 'number' && amount > 0) {
     return amount;
   }
@@ -125,20 +132,16 @@ const deposit = function (amount) {
 deposit(100); // => 100
 deposit("100"); // => Please enter a valid number
 
-// since strings store a series of characters in an ordered way
-// we could use the index of the character to access the character in the string
-// each character in the string has it is own unique identifying number (index),
-// the index value starts at zero and for every letter that is added after the first one the index will be incremented by one
 
+
+//Extra Practice
+// write a function `startsWith` that accept two string arguments `string`, `character` and returns true if the string
+// starts with that character
 "hello"[0]; // => h
 "hello"[1]; // => e
 "hello"[2]; // => l
 "hello"[3]; // => l
 "hello"[4]; // => o
-
-// write a function `startsWith` that accept two string arguments `string`, `character` and returns true if the string
-// starts with that character
-
 
 const startsWith = function (string, character) {
   if (string[0].toLowerCase() === character.toLowerCase()) {
@@ -156,10 +159,8 @@ startsWith("World", "c"); // => false
    
 
   //Write a function endsWith that accept two string arguments string, character and returns true if the string ends with that character.
-  // write a function `startsWith` that accept two string arguments `string`, `character` and returns true if the string
-// starts with that character
-
-const startsWith = function (string, character) {
+  //اكتب دالة تنتهي بـ التي تقبل وسيطتين سلسلة ، حرف وترجع صحيحًا إذا كانت السلسلة تنتهي بهذا الحرف
+const startsWith1 = function (string, character) {
  string= "hello"[4]; // => h
  string= "hello"[3]; // => e
  string= "hello"[2]; // => l
@@ -248,7 +249,7 @@ rockPaperScissors("rock"); // => you win
 rockPaperScissors("rock"); // => it is a draw
 rockPaperScissors("asd"); // => 'invalid move'
 rockPaperScissors(22); // => 'invalid move'
-c// => 'invalid move'
+// => 'invalid move'
 //Write a function guessTheSquareRoot that accepts two number arguments number, squareRoot and returns a string correct if the guess is correct and returns incorrect if the guess is incorrect.
 
 const guessTheSquareRoot = function (number, squareRoot) {
