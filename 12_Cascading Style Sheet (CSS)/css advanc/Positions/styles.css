@@ -1,0 +1,54 @@
+.parent {
+  /* uncomment below when trying out absolute position */
+  /* position: relative; */
+}
+
+.child1 {
+  /* Static position */
+  /* static position is the default position, it is not possible to move static items using `top`, `right`, `bottom`, `left` properties */
+  
+  position: static;
+  top: 50px;
+  left: 60px;
+}
+
+.child2 {
+  /* Relative position */
+  /* relative position makes the element positioned relative to it where it would normally be and if it is moved 
+  it will be moved depending on that relative position, since the element is taken out of the normal document flow it can overflow
+  other elements when moved */
+
+  /* position: relative; */
+  /* top: 50px;
+  left: 60px; */
+}
+
+.child3 {
+  /* Absolute position */
+  /* absolute position will position the element in a fixed position depending on other parent 
+  positioned elements (None statically positioned elements), if none was present then it will be positioned depending on the document body,
+  an element with absolute position can be moved with `top`, `right`, `bottom`, `left` properties */
+
+  /* will move it to the top of the screen if the parent element isn't positioned */
+  /* position: absolute;
+  top:0px */
+}
+
+.child4 {
+  /* Fixed position */
+  /* fixed position will position the element depending on the document body only and when scrolling the 
+  element will keep  its position, element with fixed position can be moved with `top`, `right`, `bottom`, `left` properties */
+
+  /* position: fixed;
+  top:0px; */
+}
+
+.child5 {
+  /* Sticky position */
+  /* sticky position will act as a relative postilion until the element reaches the specified `top`, `right`, `bottom`, `left`
+  postilion  in comparison with the screen then it will become a fixed position element */
+
+  /* the element can be sticky in both horizontal and vertical ways */
+  /* position: sticky;
+  top:0px; */
+}

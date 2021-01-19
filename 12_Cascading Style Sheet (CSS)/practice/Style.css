@@ -1,0 +1,30 @@
+p{
+    color: green;
+}
+ul{
+    background-color: aqua;
+    display: flex;
+    
+}
+ul li {
+    margin: 10px 10px;
+}
+
+body{
+    background-color: red;
+}
+ 
+a {
+    text-decoration: none;
+}
+img{
+    border-radius: 39ch;
+    width: 50%;
+    height: 400px;
+}
+p{
+    line-height: 5ch;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    color: chartreuse;
+}

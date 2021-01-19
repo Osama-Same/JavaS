@@ -1,0 +1,67 @@
+.parent {
+  /* flex orders the elements in a horizontal way by default */
+  /* display: flex; */
+
+  /* it is possible to change the direction and make it vertical  */
+  /* flex-direction: column; */
+
+  /* gap will add will add space around the elements, it is possible to use 
+  row-gap or column-gap to be more specific  */
+  /* gap: 25px; */
+
+  /* wrap will fit as many as possible on the screen till it reaches the end then
+  it will add another row or colum depending on the flex-direction */
+  /* flex-wrap: wrap; */
+
+  /* justify-content is responsible for the item alignment inside the flex container
+  (depending on the direction) */
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  /* justify-content: flex-start; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+
+  /* align-items is responsible for the item alignment inside the flex container
+  (depending on the opposite flex-direction) */
+  /* align-items: center; */
+  /* align-items: flex-end; */
+  /* align-items: flex-start; */
+  /* align-items: stretch; */
+
+}
+
+.child1 {
+  min-height: 100px;
+  width: 150px;
+  /* prevents the shrinking of the item */
+  /* flex-shrink: 0; */
+  /* align-self: flex-end; */
+}
+
+.child2 {
+  min-height: 150px;
+  width: 150px;
+  /* align-self: center; */
+}
+
+.child3 {
+  min-height: 200px;
+  width: 150px;
+  /* flex-grow: 1; */
+  /* flex-basis: 0; */
+}
+
+.child4 {
+  min-height: 250px;
+  width: 150px;
+  /* flex-grow: 1; */
+  /* flex-basis: 0; */
+}
+
+.child5 {
+  min-height: 300px;
+  width: 150px;
+  /* flex-grow: 2; */
+  /* flex-basis: 0; */
+}

@@ -1,0 +1,64 @@
+.parent {
+  /* grid is used to order elements in a horizontal and a vertical way (two dimensional grid) */
+  display: grid;
+
+  /* it is possible to define the number and the size of the columns by using grid-template-columns */
+  /* grid-template-columns: 100px 200px 300px; */
+  /* grid-template-columns: repeat(4, 100px); */
+  /* grid-template-columns: 1fr 1fr 2fr; */
+
+  /* it is possible to define the size of the row by using grid-template-rows */
+  /* first row is 100px tall and the second is 200px */
+  /* grid-template-rows: 100px 200px;  */
+  /* grid-template-rows: 1fr 2fr; */
+
+  /* grid-auto-rows will set all the undefined rows to default to its value */
+  /* grid-auto-rows: 100px; */
+
+  /* gap will add will add space around the elements, it is possible to use 
+  row-gap or column-gap to be more specific  */
+  /* gap: 25px; */
+
+  /* grid-template-areas:
+    "header header header "
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar random-name random-name"
+    "footer footer footer"; */
+
+  /* justify-content is responsible for the alignment of the grid items */
+  /* justify-content: center; */
+  /* justify-content: end; */
+  /* justify-content: start; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+
+  /* align-items is responsible for the item alignment of the items inside each column */
+  /* align-items: center; */
+  /* align-items: end; */
+  /* align-items: start; */
+  /* align-items: stretch; */
+}
+
+.child1 {
+  grid-area: header;
+  /* align-self: flex-end; */ 
+}
+
+.child2 {
+  grid-area: sidebar;
+  /* align-self: center; */
+}
+
+.child3 {
+  grid-area: content;
+}
+
+.child4 {
+  grid-area: random-name;
+}
+
+.child5 {
+  grid-area: footer;
+}

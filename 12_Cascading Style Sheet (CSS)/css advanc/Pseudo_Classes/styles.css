@@ -1,0 +1,59 @@
+/* Pseudo Classes */
+/* Works on all elements */
+
+/* if you hover on any element in the screen all elements 
+will have the color red */
+/* :hover{
+    color: red;
+} */
+
+/* if you hover over the selected items the color of the items will change to red */
+/* .header1:hover{
+    color: red;
+} */
+
+/* if you hover over the selected items the font size will change */
+/* .header2:hover{
+    font-size: 2rem;
+} */
+
+/* if you click on the selected item the background color will change to red 
+ as long as you are holding the click button, when let go it will change back to normal */
+/* .button1:active{
+    background-color: red;
+} */
+
+/* if the selected items are disabled then the color will change to red */
+/* .button2:disabled{
+    color: red;
+} */
+
+/* if the selected links are visited (opened) the color will change to red */
+/* a:visited{
+    color: red;
+} */
+
+/* the first child of the selected item will become red */
+/* li:first-child{
+    color: red;
+} */
+
+/* the last child of the selected item will become red */
+/* li:last-child{
+    color: red;
+} */
+
+/* specify which child to have the color red */
+/* li:nth-child(1){
+    color: red;
+} */
+
+/* will make the even number children red (starts at 0 and changes every other element)*/
+/* li:nth-child(2n + 0){
+    color: red;
+} */
+
+/* will make the odd number children red (starts at 1 and changes every other element) */
+/* li:nth-child(2n + 1){
+    color: red;
+} */
